@@ -28,7 +28,6 @@ public class Home extends AppCompatActivity {
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-
     }
     @Override
     public void onBackPressed(){
