@@ -358,7 +358,8 @@ public class LoginChecker extends AppCompatActivity implements LoaderCallbacks<C
             showProgress(false);
 
             if (success) {
-                finish();
+                Intent homeIntent = new Intent(LoginChecker.this , Home.class);
+                startActivity(homeIntent);
             } else {
                 mPasswordView.setError(getString(R.string.error_incorrect_password));
                 mPasswordView.requestFocus();
